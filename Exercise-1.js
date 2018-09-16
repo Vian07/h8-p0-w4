@@ -1,0 +1,21 @@
+// angka prima hanya dapat di bagi dengan angkanya sendiri dan tidak dapat di bagi dengan angka lain
+/*
+
+*/
+function angkaPrima(angka) {
+    var prima = true
+    
+    for (var i = 2; i < angka; i++) {
+        if(angka % i === 0){
+            prima = false
+        }
+    }
+return prima
+}
+
+
+console.log(angkaPrima(3)); // true
+console.log(angkaPrima(7)); // true
+console.log(angkaPrima(6)); // false
+console.log(angkaPrima(23)); // true
+console.log(angkaPrima(33)); // false
